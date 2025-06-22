@@ -4,65 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piyush's Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
-     <!--Header Section-->
+    <!-- Header -->
     <header>
-    <h1><u>Welcome to My Portfolio</u></h1>
-    <p>
-      <big>Hello!</big>I'm Piyush, a BCA student and aspiring
-      <i>full stack devloper</i>+ AI Explorer.
-    </p>
-    <p>Explore my journey:</p>
-    <nav>
-    <a href="education.html">Education</a>
-    <a href="experience.html">Experience</a>
-    <a href="projects.html">Projects</a>
-    </nav>
-    <hr />
+      <h1><u>Welcome to My Portfolio</u></h1>
+      <p>
+        <big>Hello!</big> I'm Piyush, a BCA student and aspiring
+        <i>Full Stack Developer + AI Explorer</i>.
+      </p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <hr />
     </header>
-    <!--About Section-->
-    <main>
-      <section>
-    <h2>Aboute me</h2>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hey! I'm Piyush, a BCA student from Ghaziabad. I’m deeply passionate
+        about full-stack development and plan to integrate AI tools into my
+        workflow. On the side, I love video editing, anime, gaming, and reading.
+      </p>
+      <img src="piyush 2.jpg" alt="Piyush's Photo" height="200" />
+      <br />
+      <small>That's me!</small>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <p>
+        Currently pursuing BCA with a focus on software development and emerging
+        AI tools.
+      </p>
+      <ul>
+        <li>Full-Stack Roadmap (12-month plan)</li>
+        <li>Excel for data jobs</li>
+        <li>Video editing using DaVinci Resolve</li>
+        <li>Learning from Apna College YouTube Channel</li>
+      </ul>
+    </section>
+
+    <!--Skills-->
+
+    <section id="skills">
+      <h2>Skills Snapshot</h2>
+      <ul>
+        <li>HTML <br /><progress value="100" max="100"></progress></li>
+        <li>
+          CSS (in progress) <br /><progress value="90" max="100"></progress>
+        </li>
+        <li>Basics of C programming</li>
+        <li>Excel for Data Entry</li>
+        <li>Video Editing (Beginner)</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>
+        Gained strong programming fundamentals through C. Hands-on with HTML and
+        starting CSS. Practicing problem-solving and UI layout regularly.
+      </p>
+      <ul>
+        <li>Built initial portfolio using pure HTML</li>
+        <li>Practicing daily with DaVinci Resolve</li>
+      </ul>
+      <p>
+        Future plans: Freelancing or part-time data entry using Excel and
+        building projects to become job-ready before graduation.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>Portfolio Website</h3>
         <p>
-        Hey! I'm Piyush, a BCA student from Ghaziabad. I'm deeply passionate about full-stack development and plan to integrate AI tools into my workflow. On the side, I love video editing, anime, gaming, and reading.
-       </p>
-    <img src="piyush 2.jpg" alt="piyush photo" height="200" /><br />
-    <small>That's me!</small>
-      </section>
-      <section>
-        <h2>Skills Snapshot</h2>
-        <ul>
-            <li>HTML <progress value="100" max="100"></progress></li>
-            <li>Learning CSS <progress value="40" max="100"></progress> </li>
-            <li>Basics of C programming</li>
-            <li>Excel for Data Entry</li>
-            <li>Video Editing (Beginner)</li>
-        </ul>
-      </section>
-  <section>
-    <h2>Contact Me</h2>
-    <form action="#" method="post">
-      <label for="name">Your Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+          Built using HTML and CSS, showcasing education, experience, and
+          personal details.
+        </p>
+      </article>
 
-      <label for="email">Your Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <article>
+        <h3>To-Do List (Coming Soon)</h3>
+        <p>Plan to build a JavaScript-based task manager app.</p>
+      </article>
 
-      <label for="message">Your Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <article>
+        <h3>Excel-Based Data Entry Demo</h3>
+        <p>
+          Practicing mock data entry formats using Excel, preparing for
+          part-time roles.
+        </p>
+      </article>
+    </section>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-</main>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-<footer>
-  <p>&copy; 2025 Piyush Kumar</p>
-</footer>
-      </section>
-    </main>
+        <label for="email">Your Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Your Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea
+        ><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Piyush Kumar</p>
+    </footer>
   </body>
 </html>
